@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --red:#ff3838;
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+  
+  *::selection{
+    background:var(--red);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  
+  body{
+    background:#f7f7f7;
+  }
+section {
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+    font-weight: bolder
+}
+
+.heading span{
+    color: var(--red);
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow:hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+.btn:hover {background-color: var(--red)}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+}
+
+header .logo i{
+    padding-right: .5rem;
+    color: red;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--red)
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor:pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: 3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-image:url("../css/images/bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    padding-top: 6.5rem;
+    margin-left: 30rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.service .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.service .container .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    background-image: url("images/s-3.jpg");
+    width: 300px;
+    height: 300px;
+    margin-left:10rem;
+  }
+
+  .zoom h1{
+      font-size: 4rem;
+      color:rgb(255, 0, 0);
+      padding-top: 2rem;
+      font-weight: bolder;
+      text-align: center;
+
+  }
+  
+ .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+  .service .container .zoom-1{
+    padding: 50px;
+    transition: transform .2s;
+    background-image: url("images/s-2.jpeg");
+    width: 300px;
+    height: 300px;
+    margin-right:17rem;
+  }
+  .zoom-1 h1{
+    font-size: 4rem;
+    color:rgb(255, 0, 0);
+    padding-top: 2rem;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+  .service .container .zoom-1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+ 
+.myproject .container{
+  display: flex;
+    gap: 6rem;
+}
+
+.myproject .container .image{
+  width: 50%;
+}
+.about{
+    background-color:rgb(238, 235, 227);
+}
+
+.about .container{
+    display: flex;
+    gap: 10rem;
+}
+
+.about .container .image{
+    padding-top: 5rem;
+    margin-left: 2rem;
+}
+
+.about .container .content{
+    padding-top: 3rem;
+}
+.about .container .content h1{
+    font-style: oblique;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+
+}
+
+.about .container .content p{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #666;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+.Contact .container{
+    display: flex;
+    gap: 10rem;
+}
+
+.Contact .container .content{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Contact .container .content h3{
+    font-weight: bold;
+}
+  
+* {
+    box-sizing: border-box;
+    border-radius: 2rem;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color:var(--red);
+  }
+  
+  .container-1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+* {
+    box-sizing: border-box;
+}
+ 
+.footer{
+   background: rgb(231, 231, 228);
+}
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position:absolute;
+        top: 100%; left: 0; right: 0;
+        background: #f7f7f7;
+        border-top: 1px solid #000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    }
+    
+
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0,0,0,.1);
+        border-left: .5rem solid var(--red);
+        background: #fff;
+    }
+}
+
+
+
+
+
